@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply bg-gray-900 text-white;
+}
+
+.app {
+  @apply min-h-screen flex flex-col items-center p-5;
+}
+
+h1 {
+  @apply text-4xl font-bold text-center mb-6;
+}
+
+.search-container {
+  @apply flex justify-center items-center mb-6;
+}
+
+input {
+  @apply p-3 text-black rounded-l-lg w-64 md:w-96 outline-none;
+}
+
+button {
+  @apply bg-blue-500 hover:bg-blue-600 px-5 py-3 rounded-r-lg text-white transition;
+}
+
+.movie-list {
+  @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 px-5;
+}
+
+.movie-card {
+  @apply bg-gray-800 rounded-lg p-4 shadow-lg hover:scale-105 transition;
+}
+
+.movie-card img {
+  @apply w-full h-64 object-cover rounded-lg;
+}
+
+.movie-card h3 {
+  @apply text-xl font-semibold mt-3;
+}
+
+.movie-card p {
+  @apply text-gray-400;
+}
