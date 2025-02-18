@@ -236,3 +236,94 @@ button:hover {
   border-radius: 8px;
   margin: 10px 0;
 }
+.movie-details {
+  padding: 12px;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.95));
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: #ffcc80;
+  text-shadow: 1px 1px 5px rgba(255, 200, 120, 0.8);
+}
+
+.movie-card:hover .movie-details {
+  opacity: 1;
+  box-shadow: 0 0 12px rgba(255, 200, 120, 0.5);
+}
+
+.movie-card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffd700; /* Gold color for better contrast */
+}
+
+.movie-card p {
+  font-size: 15px;
+  color: #ffcc80;
+}
+.movie-details {
+  padding: 12px;
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  text-shadow: 1px 1px 5px rgba(255, 200, 120, 0.6);
+  box-shadow: 0 0 10px rgba(255, 200, 120, 0.4);
+}
+
+.movie-card:hover .movie-details {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.movie-details h3 {
+  font-size: 18px;
+  color: #ffd700; /* Gold color for better visibility */
+  margin-bottom: 5px;
+}
+
+.movie-details .highlight {
+  color: #ff9800; /* Brighter orange for key details */
+  font-weight: bold;
+}
+
+.modal-content {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+}
+
+.movie-info p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff5722;
+}
+
+.close-btn:hover {
+  color: #ff9800;
+}
